@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      section {
+        width: 80vw;
+        min-height: 30vh;
+        /* border: 1px solid black; */
+        margin: 30px auto;
+      }
+      article {
+        width: 90%;
+        /* border: 1px solid red; */
+        height: 100%;
+      }
+      section > .header {
+        display: flex;
+        width: 100%;
+      }
+      .medium > .east > div > img {
+        width: 733px;
+        height: 305px;
+      }
+      /* //353w 515h */
+      .east {
+        height: 100%;
+        width: 70%;
+      }
+      .west {
+        width: 30%;
+      }
+      .medium > .east > div {
+        display: flex;
+      }
+      .left > img {
+        height: 30px;
+        width: 60px;
+        margin-top: 10px;
+      }
+      .right > ul {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        font-size: 20px;
+        padding: 0px 0px 0px 450px;
+      }
+      .medium {
+        width: 100%;
+        display: flex;
+        /* margin: 10px 20px 10px 20px; */
+      }
+      .west {
+        background-color: #00001a;
+        color: white;
+        padding: 30px;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+      .east > div > .up {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      .east > div > .bottom {
+        font-size: 21px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 10px auto;
+        height: 100%;
+
+        width: 100%;
+      }
+      .bottom > .m1 {
+      }
+      .m2 > button {
+        height: 52px;
+        background-color: #ed5f4c;
+        color: black;
+        border: none;
+        font-size: 1rem;
+        /* word-spacing: 10px; */
+        letter-spacing: 7px;
+        font-weight: bold;
+        width: 185px;
+      }
+      .m2 > button:hover {
+        background-color: white;
+        color: #ed5f4c;
+      }
+      .bottom {
+        display: flex;
+        height: 151px;
+        margin-top: 30px;
+        /* width: 354px;  */
+        width: 100%;
+      }
+      section > .bottom > div {
+        height: 100%;
+        width: 364px;
+        /* border: 1px solid yellow; */
+        /* margin: 20px; */
+        display: flex;
+      }
+      section > .bottom > div > .yy > img {
+        height: 130px;
+        width: 104px;
+      }
+      section > .bottom > div > .ry {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0px 20px 0px 20px;
+        gap: 10px;
+        width: 100%;
+      }
+      section > .bottom > div > .ry > h1 {
+        font-size: 2rem;
+        color: #ed5f4c;
+      }
+      section > .bottom > div > .ry > span {
+        font-size: 21px;
+        font-weight: bold;
+      }
+      section > .bottom > div > .ry > p {
+        color: gray;
+      }
+      .medium > .west > div > h1 {
+        font-size: 3rem;
+        color: #e8aa54;
+        margin-bottom: 20px;
+      }
+      .medium > .west > div > span {
+        font-weight: bold;
+        font-size: 22px;
+        /* color: red; */
+      }
+      .medium > .west > div:hover {
+        color: black;
+        background-color: white;
+      }
+      .medium > .west > div > p {
+        /* font-size: 20px; */
+        margin-top: 10px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article class="header">
+        <aside class="left">
+          <img src="./assets/images/logo.svg" alt="" />
+        </aside>
+        <aside class="right">
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </aside>
+      </article>
+      <article class="medium">
+        <aside class="east">
+          <div>
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+          </div>
+          <div>
+            <article class="up">The Bright Future of Web 3.0?</article>
+            <article class="bottom">
+              <div class="m1">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </div>
+              <div class="m2"><button>READ MORE</button></div>
+            </article>
+          </div>
+        </aside>
+        <aside class="west">
+          <div>
+            <h1>New</h1>
+            <span>Hydrogen VS Electric Cars</span>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div>
+            <span>The Downsides of AI Artistry </span>
+
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div>
+            <span>Is VC Funding Drying Up?</span>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </aside>
+      </article>
+      <article class="bottom">
+        <div>
+          <aside class="yy">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+          </aside>
+          <aside class="ry">
+            <h1>01</h1>
+            <span>Reviving Retro PCs</span>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </aside>
+        </div>
+        <div>
+          <aside class="yy">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
+          </aside>
+          <aside class="ry">
+            <h1>02</h1>
+            <span>Top 10 Laptops of 2022</span>
+            <p>Our best picks for various needs and budgets.</p>
+          </aside>
+        </div>
+        <div>
+          <aside class="yy">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+          </aside>
+          <aside class="ry">
+            <h1>03</h1>
+            <span>The Growth of Gaming</span>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </aside>
+        </div>
+      </article>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <img src="./design/desktop-design.jpg" alt="" />
+  </body>
+</html>
